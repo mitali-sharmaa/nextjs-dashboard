@@ -11,6 +11,7 @@ export default async function InvoicesTable({
   query: string;
   currentPage: number;
 }) {
+  // Fetching invoices based on the query and currentPage
   const invoices = await fetchFilteredInvoices(query, currentPage);
 
   return (
